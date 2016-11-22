@@ -1,0 +1,64 @@
+@import 'slick';
+@import 'slick-theme';
+
+.scroller {
+  img {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+.slick-prev::before, .slick-next::before {
+  color: #000;
+}
+
+.slick-next {
+  right: -5px;
+  z-index: 1;
+}
+
+img {
+  margin: 5px;
+}
+
+img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.slick-prev {
+  left: -5px;
+  z-index: 1;
+}
+
+.a {
+  height: 300px;
+  width: 400px;
+}
+
+.b {
+  height: 300px;
+  width: 400px;
+}
+
+.c {
+  height: 300px;
+  width: 400px;
+}
+
+.d {
+  height: 400px;
+  width: 300px;
+}
+
+.e {
+  height: 300px;
+  width: 400px;
+}
+
+.f {
+  height: 300px;
+  width: 400px;
+}
+
