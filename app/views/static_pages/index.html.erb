@@ -1,5 +1,5 @@
 <div class="header-bg">
-<center><h1 id="header"><span class="pink">Artwork</span> by <span class="cyan">Johnny Choo     </span><span><%= image_tag('jchoo_icon.png', class: "icon") %></span></h1></center>
+<center><h1 id="header"><span class="pink">Artwork</span> by <span class="cyan">Johnny Choo     </span><span><%= link_to image_tag('jchoo_icon.png', class: "icon"), "https://www.linkedin.com/in/jchoo157" %></span></h1></center>
 </div>
 
 <div class="scroller-border">
@@ -19,7 +19,7 @@
 
   <% @images.each do |key, val| %>
     <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <%= image_tag("#{val[:img]}", class: "#{val[:class]}", id: "img1", alt: "#{val[:title]}") %>
+      <%= image_tag("#{val[:img]}", class: "#{val[:class]}", id: "img1", alt: "#{val[:title]}", data: "#{val[:materials].join(", ")}") %>
     </a>
   <% end %>
 </div></center>
