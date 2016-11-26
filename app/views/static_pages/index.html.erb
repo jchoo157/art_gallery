@@ -4,50 +4,12 @@
 
 <div class="scroller-border">
   <div class="scroller">
-    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <%= image_tag('daft_punk.jpg', class: "a img-responsive", id: "img1", alt: "Daft Punk") %>
-      <p hidden>lblasdflj</p>
-    </a>
-
-    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <%= image_tag('duck.jpg', class: "b img-responsive") %>
-    </a>
-
-    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <%= image_tag('howl.jpg', class: "c img-responsive") %>  
-    </a>
-
-    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <%= image_tag('mree.jpg', class: "d img-responsive") %>
-    </a>
-    
-    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <%= image_tag('tron.jpg', class: "e img-responsive") %>
-    </a>
-    
-    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <%= image_tag('zoey.jpg', class: "f img-responsive") %>
-    </a>
-
-    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <%= image_tag('puff.jpg', class: "g img-responsive") %>
-    </a>
-    
-    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <%= image_tag('broccolil.png', class: "h img-responsive") %>
-    </a> 
-
-    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <%= image_tag('broccolot.png', class: "i img-responsive") %>
-    </a>
-      
-    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <%= image_tag('broccodile.png', class: "j img-responsive") %>
-    </a>
-
-    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <%= image_tag('trainer.png', class: "k img-responsive") %>
-    </a>
+    <% @images.each do |key, val| %>
+      <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+        <%= image_tag("#{val[:img]}", class: "#{val[:class]}", id: "img1", alt: "#{val[:title]}") %>
+        <p hidden><%= val[:materials] %></p>
+      </a>
+    <% end %>
   </div>
 </div>
 

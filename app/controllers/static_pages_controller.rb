@@ -2,25 +2,27 @@ class StaticPagesController < ApplicationController
   def index
     @images = {
 
-      daft: {title: "Daft Punk", materials: ["Photoshop", "Intuos 3 Tablet", about: "Daft Punks Discovery album was by far my favorite and I still listen to them when getting work done! This was one of my first attempts at practicing highlights and reflections. It was challenging but fun to try something new."},
+      daft: {img: "daft_punk.jpg", title: "Daft Punk", materials: ["Photoshop", "Intuos 3 Tablet"], about: "", class: "a"},
 
-      mree: {img: "daft_punk.jpg", title: "Mree", materials: ["Photoshop", "Intuos 3 Tablet"], about: ""}
+      mree: {img: "mree.jpg", title: "Mree", materials: ["Photoshop", "Intuos 3 Tablet"], about: "", class: "d"},
 
-      duck: {img: "mree.jpg", title: "Duck", materials: ["Paper", "Mechanical Pencil"], about: ""},
+      duck: {img: "duck.jpg", title: "Duck", materials: ["Paper", "Mechanical Pencil"], about: "", class: "b"},
 
-      zoey: {img: "zoey.jpg", title: "Zoey Deschanel", materials: ["Photoshop", "Intuos 3 Tablet"], about: ""},
+      zoey: {img: "zoey.jpg", title: "Zoey Deschanel", materials: ["Photoshop", "Intuos 3 Tablet"], about: "", class: "f"},
 
-      tron: {img: "tron.jpg", title: "Tron", materials: ["Oekaki Board", "Wacom Tablet"], about: ""},
+      tron: {img: "tron.jpg", title: "Tron", materials: ["Oekaki Board", "Wacom Tablet"], about: "", class: "e"},
 
-      puff: {img: "puff.jpg", title: "JigglyBuff", materials: ["Note 3"], about: ""},
+      howl: {img: "howl.jpg", title: "Howls Moving Castle", materials: ["Photoshop", "Intuos 3 Tablet"], about: "", class: "c"},
 
-      broccolil: {img: "broccolil.png", title: "Broccolil", materials: ["Note 3"], about: ""},
+      puff: {img: "puff.jpg", title: "JigglyBuff", materials: ["Note 3"], about: "", class: "g"},
 
-      broccolot: {img: "broccolot.png", title: "Broccolot", materials: ["Note 3"], about: ""},
+      broccolil: {img: "broccolil.png", title: "Broccolil", materials: ["Note 3"], about: "", class: "h"},
 
-      broccodile: {img: "broccodile.png", title: "Broccodile", materials: ["Note 3"], about: ""},
+      broccolot: {img: "broccolot.png", title: "Broccolot", materials: ["Note 3"], about: "", class: "i"},
 
-      trainer: {img: "trainer.png", title: "Trainer", materials: ["Note 3"], about: ""}
+      broccodile: {img: "broccodile.png", title: "Broccodile", materials: ["Note 3"], about: "", class: "j"},
+
+      trainer: {img: "trainer.png", title: "Trainer", materials: ["Note 3"], about: "", class: "k"}
     }
   end
 end

@@ -23,7 +23,7 @@ $(document).ready(function() {
         var title = $(this).attr("alt");
         console.log(title);
         console.log(image);
-        $(".modal-title").replaceWith("<h3 class='modal-title'>"+ title +"</h3>")
+        $(".modal-title").replaceWith("<center><h3 class='modal-title'>"+ title +"</h3></center>")
         $("#showImg").append("<img class='img-responsive' src='" + image + "' />")
     })
 });
