@@ -17,17 +17,13 @@
   <div class="img_header_bg">
     <h1 class="images_header">For your <span class="cyan1">viewing</span> <span style="color: #ffff89">convenience</span></h1>
   </div>
-  <%= image_tag('daft_punk.jpg', class: "a",) %>
-  <%= image_tag('duck.jpg', class: "b") %>
-  <%= image_tag('howl.jpg', class: "c") %>
-  <%= image_tag('mree.jpg', class: "d") %>
-  <%= image_tag('tron.jpg', class: "e") %>
-  <%= image_tag('zoey.jpg', class: "f") %>
-  <%= image_tag('puff.jpg', class: "g") %>
-  <%= image_tag('broccolil.png', class: "h") %>
-  <%= image_tag('broccolot.png', class: "i") %>
-  <%= image_tag('broccodile.png', class: "j") %>
-  <%= image_tag('trainer.png', class: "k") %>
+
+  <% @images.each do |key, val| %>
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <%= image_tag("#{val[:img]}", class: "#{val[:class]}", id: "img1", alt: "#{val[:title]}") %>
+      <p hidden><%= val[:materials] %></p>
+    </a>
+  <% end %>
 </div></center>
 
 <div class="modal fade" id="myModal" role="dialog">
