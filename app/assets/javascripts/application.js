@@ -15,3 +15,12 @@
 //= require jquery.slick
 //= require initialize
 //= require turbolinks
+
+$(document).ready(function() {
+    $('img').on('click', function(e) {
+        $("#showImg").empty();
+        var image = $(this).attr("src");
+        console.log(image);
+        $("#showImg").append("<img class='img-responsive' src='" + image + "' />")
+    })
+});

@@ -4,17 +4,70 @@
 
 <div class="scroller-border">
   <div class="scroller">
-    <%= image_tag('daft_punk.jpg', class: "a",) %>
-    <%= image_tag('duck.jpg', class: "b") %>
-    <%= image_tag('howl.jpg', class: "c") %>
-    <%= image_tag('mree.jpg', class: "d") %>
-    <%= image_tag('tron.jpg', class: "e") %>
-    <%= image_tag('zoey.jpg', class: "f") %>
-    <%= image_tag('puff.jpg', class: "g") %>
-    <%= image_tag('broccolil.png', class: "h") %>
-    <%= image_tag('broccolot.png', class: "i") %>
-    <%= image_tag('broccodile.png', class: "j") %>
-    <%= image_tag('trainer.png', class: "k") %>
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <h3 hidden>Daft Punk</h3>
+      <%= image_tag('daft_punk.jpg', class: "a img-responsive", id: "img1") %>
+      <p hidden>lblasdflj</p>
+    </a>
+
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <%= image_tag('duck.jpg', class: "b img-responsive") %>
+    </a>
+
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <%= image_tag('howl.jpg', class: "c img-responsive") %>  
+    </a>
+
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <%= image_tag('mree.jpg', class: "d img-responsive") %>
+    </a>
+    
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <%= image_tag('tron.jpg', class: "e img-responsive") %>
+    </a>
+    
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <%= image_tag('zoey.jpg', class: "f img-responsive") %>
+    </a>
+
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <%= image_tag('puff.jpg', class: "g img-responsive") %>
+    </a>
+    
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <%= image_tag('broccolil.png', class: "h img-responsive") %>
+    </a> 
+
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <%= image_tag('broccolot.png', class: "i img-responsive") %>
+    </a>
+      
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <%= image_tag('broccodile.png', class: "j img-responsive") %>
+    </a>
+
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <%= image_tag('trainer.png', class: "k img-responsive") %>
+    </a>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">your image title here (can be dynamic) </h4>
+      </div>
+      <div class="modal-body" id="showImg">
+        <!-- here we create the image dynamically -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
   </div>
 </div>
 
