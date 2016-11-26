@@ -21,6 +21,11 @@
   color: #d8fdff;
 }
 
+.cyan1 {
+  color: #9aff99;
+  font-size: 50px;
+}
+
 .scroller-border {
   border: 10px solid #2B2B2B;
   padding: 20px;
@@ -29,4 +34,24 @@
 
 .icon {
   border-radius: 48%;
+}
+
+.images {
+  background-color: #ffdfaf;
+}
+
+.images > img {
+  border: 3px solid black;
+  border-radius: 8px;
+}
+
+.img_header_bg {
+  padding: 10px;
+  background-color: #4c4c4c;
+  border-bottom: 10px solid #2B2B2B;
+}
+
+.images_header {
+  font-family: 'Arvo', serif;
+  color: white;
 }
