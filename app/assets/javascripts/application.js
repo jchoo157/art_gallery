@@ -24,7 +24,7 @@ $(document).ready(function() {
         var materials = $(this).attr("data");
         console.log(materials);
         $(".modal-title").replaceWith("<center><h1 class='modal-title'>"+ title +"</h1></center>")
-        $("#showImg").append("<img class='img-responsive' src='" + image + "' />")
+        $("#showImg").append("<center><img class='img-responsive' src='" + image + "' /></center>")
         $(".materials").replaceWith("<center><h5 class='materials'>"+ materials +"</h5></center>")
     })
 });
