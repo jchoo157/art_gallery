@@ -1,20 +1,14 @@
 <div class="header-bg">
-<center><h1 id="header"><span class="pink">Artwork</span> by <span class="cyan">Johnny Choo     </span><span><%= image_tag('jchoo_icon.png', class: "icon") %></span></h1></center>
+<center><h1 id="header"><span class="pink">Artwork</span> by <span class="cyan">Johnny Choo     </span><span><%= link_to image_tag('jchoo_icon.png', class: "icon"), "https://www.linkedin.com/in/jchoo157" %></span></h1></center>
 </div>
 
 <div class="scroller-border">
   <div class="scroller">
-    <%= image_tag('daft_punk.jpg', class: "a",) %>
-    <%= image_tag('duck.jpg', class: "b") %>
-    <%= image_tag('howl.jpg', class: "c") %>
-    <%= image_tag('mree.jpg', class: "d") %>
-    <%= image_tag('tron.jpg', class: "e") %>
-    <%= image_tag('zoey.jpg', class: "f") %>
-    <%= image_tag('puff.jpg', class: "g") %>
-    <%= image_tag('broccolil.png', class: "h") %>
-    <%= image_tag('broccolot.png', class: "i") %>
-    <%= image_tag('broccodile.png', class: "j") %>
-    <%= image_tag('trainer.png', class: "k") %>
+    <% @images.each do |key, val| %>
+      <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+        <%= image_tag("#{val[:img]}", class: "#{val[:class]}", id: "img1", alt: "#{val[:title]}", data: "#{val[:materials].join(", ")}") %>
+      </a>
+    <% end %>
   </div>
 </div>
 
@@ -22,15 +16,33 @@
   <div class="img_header_bg">
     <h1 class="images_header">For your <span class="cyan1">viewing</span> <span style="color: #ffff89">convenience</span></h1>
   </div>
-  <%= image_tag('daft_punk.jpg', class: "a",) %>
-  <%= image_tag('duck.jpg', class: "b") %>
-  <%= image_tag('howl.jpg', class: "c") %>
-  <%= image_tag('mree.jpg', class: "d") %>
-  <%= image_tag('tron.jpg', class: "e") %>
-  <%= image_tag('zoey.jpg', class: "f") %>
-  <%= image_tag('puff.jpg', class: "g") %>
-  <%= image_tag('broccolil.png', class: "h") %>
-  <%= image_tag('broccolot.png', class: "i") %>
-  <%= image_tag('broccodile.png', class: "j") %>
-  <%= image_tag('trainer.png', class: "k") %>
+
+  <% @images.each do |key, val| %>
+    <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+      <%= image_tag("#{val[:img]}", class: "#{val[:class]}", id: "img1", alt: "#{val[:title]}", data: "#{val[:materials].join(", ")}") %>
+    </a>
+  <% end %>
 </div></center>
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h1 class="modal-title">Title</h1>
+      </div>
+      <div class="modal-body" id="showImg">
+        <!-- here we create the image dynamically -->
+      </div>
+
+      <div class="modal-footer">
+      <center><h3 style="font-family: 'Source Sans Pro', sans-serif;">Materials</h3></center>
+      <div class="materials">
+      </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div>

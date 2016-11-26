@@ -37,7 +37,7 @@
 }
 
 .images {
-  background-color: #ffdfaf;
+  background-color: #bfbfbf;
 }
 
 .images > img {
@@ -54,4 +54,30 @@
 .images_header {
   font-family: 'Arvo', serif;
   color: white;
+}
+
+.modal-header {
+}
+
+.modal-body {
+}
+
+.my-img a {
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #CCC;
+}
+.my-img a:hover {
+    border: 2px solid #45AFFF;
+}    
+.modal-lg {
+    width: 86%;
+}
+.modal-body {
+    overflow: auto;
+    max-height: auto;
+}
+
+.modal-title {
+  font-family: 'Coming Soon', cursive;
 }
