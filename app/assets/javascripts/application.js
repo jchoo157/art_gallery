@@ -21,9 +21,10 @@ $(document).ready(function() {
         $("#showImg").empty();
         var image = $(this).attr("src");
         var title = $(this).attr("alt");
-        console.log(title);
-        console.log(image);
-        $(".modal-title").replaceWith("<center><h3 class='modal-title'>"+ title +"</h3></center>")
+        var materials = $(this).attr("data");
+        console.log(materials);
+        $(".modal-title").replaceWith("<center><h1 class='modal-title'>"+ title +"</h1></center>")
         $("#showImg").append("<img class='img-responsive' src='" + image + "' />")
+        $(".materials").replaceWith("<center><h5 class='materials'>"+ materials +"</h5></center>")
     })
 });

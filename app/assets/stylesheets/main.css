@@ -72,3 +72,7 @@
     overflow: auto;
     max-height: auto;
 }
+
+.modal-title {
+  font-family: 'Coming Soon', cursive;
+}
