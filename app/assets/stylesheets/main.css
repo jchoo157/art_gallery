@@ -1,0 +1,32 @@
+#header {
+  font-family: 'Arvo', serif;
+  color: #efefef;
+  font-size: 50px;
+}
+
+.header-bg {
+  padding: 1px;
+  background-color: #2b2b2b;
+}
+
+.pink {
+  color: #ff4c4c;
+}
+
+.cyan {
+  color: #b7efff;
+}
+
+.light_cyan {
+  color: #d8fdff;
+}
+
+.scroller-border {
+  border: 5px solid black;
+  padding: 20px;
+  background-color: #bcbcbc;
+}
+
+.icon {
+  border-radius: 48%;
+}
