@@ -20,7 +20,10 @@ $(document).ready(function() {
     $('img').on('click', function(e) {
         $("#showImg").empty();
         var image = $(this).attr("src");
+        var title = $(this).attr("alt");
+        console.log(title);
         console.log(image);
+        $(".modal-title").replaceWith("<h3 class='modal-title'>"+ title +"</h3>")
         $("#showImg").append("<img class='img-responsive' src='" + image + "' />")
     })
 });

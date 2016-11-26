@@ -5,8 +5,7 @@
 <div class="scroller-border">
   <div class="scroller">
     <a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-      <h3 hidden>Daft Punk</h3>
-      <%= image_tag('daft_punk.jpg', class: "a img-responsive", id: "img1") %>
+      <%= image_tag('daft_punk.jpg', class: "a img-responsive", id: "img1", alt: "Daft Punk") %>
       <p hidden>lblasdflj</p>
     </a>
 
@@ -52,25 +51,6 @@
   </div>
 </div>
 
-<div class="modal fade" id="myModal" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">your image title here (can be dynamic) </h4>
-      </div>
-      <div class="modal-body" id="showImg">
-        <!-- here we create the image dynamically -->
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
 <center><div class="images">
   <div class="img_header_bg">
     <h1 class="images_header">For your <span class="cyan1">viewing</span> <span style="color: #ffff89">convenience</span></h1>
@@ -87,3 +67,22 @@
   <%= image_tag('broccodile.png', class: "j") %>
   <%= image_tag('trainer.png', class: "k") %>
 </div></center>
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">your image title here (can be dynamic) </h3>
+      </div>
+      <div class="modal-body" id="showImg">
+        <!-- here we create the image dynamically -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
