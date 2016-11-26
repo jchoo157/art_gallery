@@ -1,0 +1,535 @@
+#header {
+  font-family: 'Arvo', serif;
+  color: #efefef;
+  font-size: 50px;
+}
+
+.header-bg {
+  padding: 1px;
+  background-color: #2b2b2b;
+}
+
+.pink {
+  color: #ff4c4c;
+}
+
+.cyan {
+  color: #b7efff;
+}
+
+.light_cyan {
+  color: #d8fdff;
+}
+
+.cyan1 {
+  color: #9aff99;
+  font-size: 50px;
+}
+
+.scroller-border {
+  border: 10px solid #2B2B2B;
+  padding: 20px;
+  background-color: #bcbcbc;
+}
+
+.icon {
+  border-radius: 48%;
+}
+
+.images {
+  background-color: #bfbfbf;
+}
+
+.images > img {
+  border: 3px solid black;
+  border-radius: 8px;
+}
+
+.img_header_bg {
+  padding: 10px;
+  background-color: #4c4c4c;
+  border-bottom: 10px solid #2B2B2B;
+}
+
+.images_header {
+  font-family: 'Arvo', serif;
+  color: white;
+}
+
+.modal-header {
+}
+
+.modal-body {
+}
+
+.my-img a {
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #CCC;
+}
+.my-img a:hover {
+    border: 2px solid #45AFFF;
+}    
+.modal-lg {
+    width: 86%;
+}
+.modal-body {
+    overflow: auto;
+    max-height: auto;
+}
+
+.modal-title {
+  font-family: 'Coming Soon', cursive;
+}
+.my-img a {
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #CCC;
+}
+.my-img a:hover {
+    border: 2px solid #45AFFF;
+}    
+.modal-lg {
+    width: 86%;
+}
+.modal-body {
+    overflow: auto;
+    max-height: auto;
+}
+@charset "UTF-8";
+/* Slider */
+/* line 2, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-slider {
+  position: relative;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 23, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 33, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-list:focus {
+  outline: none;
+}
+
+/* line 37, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 43, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 53, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+/* line 61, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+
+/* line 68, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-track:after {
+  clear: both;
+}
+
+/* line 72, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 77, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+/* line 85, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+/* line 89, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-slide img {
+  display: block;
+}
+
+/* line 93, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+/* line 97, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+/* line 101, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+/* line 105, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+/* line 109, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 117, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+/* line 3, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-loading .slick-list {
+  background: #fff url(/assets/slick/ajax-loader-e7b44c86b050fca766a96ddac2d0932af0126da6f2305280342d909168dcce6b.gif) center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url(/assets/slick-06d80cf01250132fd1068701108453feee68854b750d22c344ffc0de395e1dcb.eot);
+  src: url(/assets/slick-06d80cf01250132fd1068701108453feee68854b750d22c344ffc0de395e1dcb.eot?#iefix) format("embedded-opentype"), url(/assets/slick-26726bac4060abb1226e6ceebc1336e84930fe7a7af1b3895a109d067f5b5dcc.woff) format("woff"), url(/assets/slick-37bc99cfdbbc046193a26396787374d00e7b10d3a758a36045c07bd8886360d2.ttf) format("truetype"), url(/assets/slick-8ca11b5fcbff92ee6378017cf6832dddfa745253202d7c8d01f42d5d17c4cb5c.svg#slick) format("svg");
+}
+/* Arrows */
+/* line 22, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* line 45, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+/* line 54, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+/* line 61, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25;
+}
+
+/* line 67, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 81, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev {
+  left: -25px;
+}
+
+/* line 85, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+[dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto;
+}
+
+/* line 90, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev:before {
+  content: '←';
+}
+
+/* line 94, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+[dir='rtl'] .slick-prev:before {
+  content: '→';
+}
+
+/* line 99, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-next {
+  right: -25px;
+}
+
+/* line 103, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -25px;
+}
+
+/* line 108, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-next:before {
+  content: '→';
+}
+
+/* line 112, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+[dir='rtl'] .slick-next:before {
+  content: '←';
+}
+
+/* Dots */
+/* line 118, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 123, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* line 137, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 150, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+/* line 168, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+/* line 173, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+/* line 178, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 200, /Users/jchoo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+/* line 4, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.scroller {
+  padding: 25px;
+  background-color: #d8d8d8;
+  border-radius: 8px;
+}
+/* line 8, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.scroller img {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* line 14, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.slick-prev::before, .slick-next::before {
+  color: #000;
+}
+
+/* line 18, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.slick-next {
+  right: 3px;
+  z-index: 1;
+}
+
+/* line 23, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+img {
+  margin: 5px;
+}
+
+/* line 27, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+/* line 33, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.slick-prev {
+  left: 3px;
+  z-index: 1;
+}
+
+/* line 38, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.a {
+  height: 300px;
+  width: 400px;
+}
+
+/* line 43, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.b {
+  height: 300px;
+  width: 400px;
+}
+
+/* line 48, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.c {
+  height: 300px;
+  width: 400px;
+}
+
+/* line 53, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.d {
+  height: 300px;
+  width: 240px;
+}
+
+/* line 58, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.e {
+  height: 300px;
+  width: 350px;
+}
+
+/* line 63, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.f {
+  height: 300px;
+  width: 400px;
+}
+
+/* line 68, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.g {
+  height: 300px;
+  width: 220px;
+}
+
+/* line 73, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.h {
+  height: 300px;
+  width: 220px;
+}
+
+/* line 78, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.i {
+  height: 300px;
+  width: 220px;
+}
+
+/* line 83, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.j {
+  height: 300px;
+  width: 220px;
+}
+
+/* line 88, /Users/jchoo/personal_projects/art_gallery/app/assets/stylesheets/style.scss */
+.k {
+  height: 300px;
+  width: 220px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
