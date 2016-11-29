@@ -1,6 +1,6 @@
 # My Art Gallery
 
-I created this website to display several pieces of art I've done in the past. 
+Before web development, I was interested in creating art. I created this website to display some art pieces I've done. Please enjoy!
 
 You can check out the live version [here] (http://choo-art-gallery.herokuapp.com/).
 
