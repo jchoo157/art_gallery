@@ -4,7 +4,7 @@ I created this website to display several pieces of art I've done in the past.
 
 You can check out the live version [here] (http://choo-art-gallery.herokuapp.com/).
 
-![search] (https://github.com/jchoo157/art_gallery/blob/dev/app/assets/images/art.gif)
+![search] (https://github.com/jchoo157/art_gallery/app/assets/images/art.gif)
 
 ## Getting Started
 
