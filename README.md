@@ -6,32 +6,6 @@ You can check out the live version [here] (http://choo-art-gallery.herokuapp.com
 
 ![search] (https://github.com/jchoo157/art_gallery/blob/master/app/assets/images/art.gif)
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-```
-ruby 2.3.1
-bundler 1.12.5
-rails 5.0.0
-```
-
-### Installing
-From the command terminal, clone the repository to your local directory...
-```
-$ git clone https://github.com/jchoo157/art_gallery
-$ cd veggiemon
-```
-
-Then run bundle command to install all dependencies and run the server.
-
-```
-$ bundle install
-$ rails server
-```
-
 ## Deployment
 
 You must have Heroku CLI installed and be logged in to Heroku in order to deploy live via Heroku servers
